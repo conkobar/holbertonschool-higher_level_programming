@@ -6,4 +6,5 @@ def replace_in_list(my_list, idx, element):
     for x in range(len(my_list)):
         if x == idx:
             my_list[x] = element
-            return my_list
+
+    return my_list
