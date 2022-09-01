@@ -10,5 +10,5 @@ def safe_print_division(a, b):
 
     finally:
         # always gets executed, regardless
-        print("Inside redult: {}".format(tot))
+        print("Inside result: {}".format(tot))
         return tot
