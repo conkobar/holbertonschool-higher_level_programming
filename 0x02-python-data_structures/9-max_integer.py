@@ -9,6 +9,7 @@ def max_integer(my_list=[]):
             if i > big:
                 big = i
                 continue
+        # return it
         return big
 
     # null if given null
