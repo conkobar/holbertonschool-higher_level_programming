@@ -9,10 +9,8 @@ def max_integer(my_list=[]):
             if i > big:
                 big = i
                 continue
+        return big
 
     # null if given null
     else:
-        big = None
-
-    # return the biggest int
-    return big
+        return None
