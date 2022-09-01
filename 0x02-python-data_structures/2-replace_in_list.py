@@ -3,8 +3,7 @@
 
 def replace_in_list(my_list, idx, element):
     # replace element of list with new element
-    if idx < 0 and idx >= len(my_list):
-        return None
-
-    my_list[idx] = element
-    return my_list
+    for x in range(len(my_list)):
+        if x == idx:
+            my_list[x] = element
+            return my_list
