@@ -3,10 +3,16 @@
 
 def max_integer(my_list=[]):
     # find the biggest int in list
-    big = 0
-    for i in my_list:
-        if i > big:
-            big = i
-            continue
+    if my_list:
+        big = 0
+        for i in my_list:
+            if i > big:
+                big = i
+                continue
 
-        return big if i else None
+    # null if given null
+    else:
+        big = None
+
+    # return the biggest int
+    return big
