@@ -4,7 +4,7 @@
 def square_matrix_simple(matrix=[]):
     # completes squares of all ints in matrix
     # create empty matrix
-    dupe = [[]]
+    dupe = []
 
     # append squares to new matrix
     for idx in matrix:
