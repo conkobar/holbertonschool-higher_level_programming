@@ -8,7 +8,7 @@ def square_matrix_simple(matrix=[]):
 
     # append squares to new matrix
     for idx in matrix:
-        dupe.append(list(map(lambda x: x ** 2, i)))
+        dupe.append(list(map(lambda x: x ** 2, idx)))
 
     # return new matrix
     return dupe
