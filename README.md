@@ -1,6 +1,6 @@
-# [<center>HOLBERTON SCHOOL HIGHER LEVEL PROGRAMMING - Trimester 2</center>](https://intranet.hbtn.io/)
+# [<center>0x03. Python - More Data Structures: Set, Dictionary - 1149</center>](https://intranet.hbtn.io/projects/1149#quiz-completed)
  ---
  ### <center>Description</center> 
- ##### &emsp; Starting to work with Python.
+ ##### &emsp; Learning to use more complex data structures in Python.
  ---
- [<center>Buzz Kleine</center>](github.com/conkobar)
+ [<center>Buzz</center>](github.com/conkobar)
