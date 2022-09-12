@@ -1,37 +1,40 @@
 >>> add_integer = __import__("0-add_integer").add_integer
 
-try for @a string
->>> add_integer('hello', 1)
+try for @a string:
+    >>> add_integer('hello', 1)
 
-try for @b string
->>> add_integer(1, 'world')
+try for @b string:
+    >>> add_integer(1, 'world')
 
-nothing passed to @a
->>> add_integer(None, 4)
+nothing passed to @a:
+    >>> add_integer(None, 4)
 
-nothing passed to @b
->>> add_integer(4, None)
+nothing passed to @b:
+    >>> add_integer(4, None)
 
-no values passed
->>> add_integer()
+no values passed:
+    >>> add_integer()
 
-@a and @b are negative
->>> add_integer(-4, -4)
+@a and @b are negative:
+    >>> add_integer(-4, -4)
 
-string typecast to int
->>> add_integer(int('apples'), 4)
+string typecast to int:
+    >>> add_integer(int('apples'), 4)
 
-long number given to @a
->>> add_integer(123123123123123123123123123123123, 1231231231343412343123123123123123123)
+long number given to @a:
+    >>> add_integer(123123123123123123123123123123123, 1231231231343412343123123123123123123)
 
-given infinity
->>> add_integer(float('inf'), 0)
+given infinity:
+    >>> add_integer(float('inf'), 0)
 
-given list
->>> add_integer([4], 4)
+given list:
+    >>> add_integer([4], 4)
 
-given too many values
->>> add_integer(4, 4, 4)
+given too many values:
+    >>> add_integer(4, 4, 4)
 
-given only one value
->>> add_integer(4)
+given only one value:
+    >>> add_integer(4)
+
+given complex number:
+    >>> add_integer(4a, 5b)
