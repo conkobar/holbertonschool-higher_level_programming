@@ -22,10 +22,10 @@ string typecast to int
 >>> add_integer(int('apples'), 4)
 
 long number given to @a
->>> add_integer(123123123123123123123123123123123)
+>>> add_integer(123123123123123123123123123123123, 1231231231343412343123123123123123123)
 
 given infinity
->>> add_integer(inf, 0)
+>>> add_integer(float('inf'), 0)
 
 given list
 >>> add_integer([4], 4)
