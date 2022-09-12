@@ -1,0 +1,43 @@
+>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+>>> neo = [
+        [1, 2, 3],
+        [4, 5, 6]
+    ]
+
+>>> naomi = [
+        [1.1, 2, 3.3],
+        [4, 5.5, 6]
+    ]
+
+>>> ghost = [
+        ['best', 'school', 3],
+        [4, 'ever', 6]
+
+
+given nothing:
+    >>> matrix_divided()
+
+given int:
+    >>> matrix_divided(4, 2)
+
+given strings:
+    >>> matrix_divided('potato', 2)
+    >>> matrix_divided(neo, 'tomato')
+
+given infinite:
+    >>> matrix_divided(float('inf'), 2)
+    >>> matrix_divided(neo, float('inf'))
+
+given mix of floats and ints:
+    >>> matrix_divided(naomi, 3)
+
+given mix of strings:
+    >>> matrix_divided(ghost, 3)
+
+given just a matrix:
+    >>> matrix_divided(neo)
+
+given multiple matrixes:
+    >>> [matrix_divided([[1, 4], [-3, 4]], i) for i in range(1,3)]
+
