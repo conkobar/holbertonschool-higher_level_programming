@@ -1,0 +1,12 @@
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+
+given nothing:
+    >>> text_indentation()
+    >>> text_indentation("")
+    >>> text_indentation(None)
+
+given bad type:
+    >>> text_indentation(350)
+    >>> text_indentation(list[])
+    >>> text_indentation(6.9)
