@@ -1,0 +1,17 @@
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+given two strings:
+    >>> say_my_name("big", "pimpin")
+
+given one string:
+    >>> say_my_name("foo")
+    >>> say_my_name("foo", "")
+    >>> say_my_name( , "foo")
+
+given nothing:
+    >>> say_my_name()
+
+given bad types:
+    >>> say_my_name(69, 420)
+    >>> say_my_name(list[1, 2, 3], tuple(4, 5, 6))
+    >>> say_my_name(list["yee", "haw"], another_list["part", "ner"])
