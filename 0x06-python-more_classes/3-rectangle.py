@@ -50,9 +50,14 @@ class Rectangle:
 
     def __str__(self):
         if self.__width and self.__height:
-            return ("\n".join("#" * self.__width for i in range(self.__height)))
+            return ("\n".join(
+                "#" * self.__width for i in range(
+                    self.__height)))
         else:
             return ""
 
     def __repr__(self):
-        return ("{}({}, {})".format(self.__class__.__name__, self.__width, self.__height))
+        return ("{}({}, {})".format(
+            self.__class__.__name__,
+            self.__width,
+            self.__height))
