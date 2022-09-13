@@ -1,0 +1,19 @@
+>>> print_square = __import__('4-print_square').print_square
+
+
+given nothing:
+    >>> print_square()
+
+given a negative number:
+    >>> print_square()
+
+given one int:
+    >>> print_square(4)
+
+given bad type:
+    >>> print_square("beans")
+    >>> print_square(6.66)
+    >>> print_square(float("inf"))
+
+given too many arguments:
+    >>> print_square(1, 2, 3, 4)
