@@ -45,3 +45,8 @@ GIVEN ODD METHODS:
     Traceback (most recent call last):
     ...
     AttributeError: 'MyList' object has no attribute 'str'
+
+GIVEN DOCS:
+
+    >>> print(MyList.__doc__)
+    new list type object
