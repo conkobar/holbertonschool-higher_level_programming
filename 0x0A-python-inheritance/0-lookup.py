@@ -3,4 +3,5 @@
 
 
 def lookup(obj):
+    """ returns properties of given obj """
     return dir(obj)
