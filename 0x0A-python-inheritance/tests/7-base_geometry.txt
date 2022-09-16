@@ -1,0 +1,37 @@
+IMPORT:
+    >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+    >>> bg = BaseGeometry()
+
+GIVEN DOC:
+    >>> bg.__doc__
+    'new class per given task'
+
+GIVEN INT:
+    >>> bg.integer_validator(4)
+    Traceback (most recent call last):
+    ...
+    TypeError: integer_validator() missing 1 required positional argument: 'value'
+
+GIVEN STR:
+    >>> bg.integer_validator('apples')
+    Traceback (most recent call last):
+    ...
+    TypeError: integer_validator() missing 1 required positional argument: 'value'
+
+GIVEN TOO MANY ARGS:
+    >>> bg.integer_validator('apples', 4, 'pie', 5)
+    Traceback (most recent call last):
+    ...
+    TypeError: integer_validator() takes 3 positional arguments but 5 were given
+
+GIVEN NOTHING:
+    >>> bg.integer_validator()
+    Traceback (most recent call last):
+    ...
+    TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+
+GIVEN NEGATIVE NUMBER:
+    >>> bg.integer_validator('apples', -4)
+    Traceback (most recent call last):
+    ...
+    ValueError: apples must be greater than 0
