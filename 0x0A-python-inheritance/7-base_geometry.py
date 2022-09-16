@@ -2,9 +2,6 @@
 """empty class per given task"""
 
 
-from multiprocessing.sharedctypes import Value
-
-
 class BaseGeometry:
     """new class per given task"""
     def area(self):
