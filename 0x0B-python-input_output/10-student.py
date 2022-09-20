@@ -10,12 +10,11 @@ class Student:
         self.age = age
 
     def to_json(self, attrs=None):
-        jays = vars(self)
-
         if attrs:
             jays = {}
             for key, value in vars(self).items():
                 if key in attrs:
                     jays[key] = value
+            return jays
 
-        return jays
+        return vars(self)
