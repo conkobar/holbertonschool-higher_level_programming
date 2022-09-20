@@ -98,3 +98,12 @@ class Rectangle(Base):
     def area(self):
         """find area of rectangle"""
         return self.__width * self.__height
+
+    def display(self):
+        """prints the triangle in hashses"""
+        if self.__width and self.__height:
+            return ("\n".join(
+                "#" * self.__width for i in range(
+                    self.__height)))
+        else:
+            return ""
