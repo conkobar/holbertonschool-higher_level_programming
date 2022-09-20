@@ -102,8 +102,8 @@ class Rectangle(Base):
     def display(self):
         """prints the triangle in hashses"""
         if self.__width and self.__height:
-            return ("\n".join(
+            print("\n".join(
                 "#" * self.__width for i in range(
                     self.__height)))
         else:
-            return ""
+            print()
