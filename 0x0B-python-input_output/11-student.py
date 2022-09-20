@@ -10,7 +10,6 @@ class Student:
         self.last_name = last_name
         self.age = age
 
-
     def to_json(self, attrs=None):
         """comments go here i guess"""
         if attrs is not None:
@@ -21,7 +20,6 @@ class Student:
             return jays
 
         return vars(self)
-
 
     def reload_from_json(self, json):
         """loads student info from dict"""
