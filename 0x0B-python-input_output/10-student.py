@@ -3,14 +3,16 @@
 
 
 class Student:
-    """defines student class"""
+    """defines student class for task 10"""
     def __init__(self, first_name, last_name, age):
+        """maybe this is what it wants all of a sudden"""
         self.first_name = first_name
         self.last_name = last_name
         self.age = age
 
     def to_json(self, attrs=None):
-        if attrs != None:
+        """comments go here i guess"""
+        if attrs is not None:
             jays = {}
             for key, value in vars(self).items():
                 if key in attrs:
