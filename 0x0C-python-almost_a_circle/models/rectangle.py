@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """module for rectangular model"""
+from re import X
+from turtle import width
 from models.base import Base
 
 
@@ -107,7 +109,7 @@ class Rectangle(Base):
         for i in range(self.__height):
             print("{}{}".format(" " * self.__x, "#" * self.__width))
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """assigns new argument to each attribute"""
         idx = 0
         for arg in args:
@@ -122,3 +124,14 @@ class Rectangle(Base):
                 self.__x = arg
             if idx == 5:
                 self.__y = arg
+        for key, value in kwargs.items():
+            if key == "width":
+                self.__width = value
+            if key == "height":
+                self.__height = value
+            if key == "x":
+                self.__x = value
+            if key == "y":
+                self.__y = value
+            if key == "id":
+                self.id = value
