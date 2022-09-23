@@ -28,6 +28,7 @@ class Base:
         """writes JSON string rep to file"""
         with open("{}.json".format(cls.__name__), "w") as f:
             newL = []
-            for i in list_objs:
-                newL.append(i.to_dictionary())
+            if list_objs:
+                for i in list_objs:
+                    newL.append(i.to_dictionary())
             f.write(cls.to_json_string(newL))
