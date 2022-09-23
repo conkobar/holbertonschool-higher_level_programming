@@ -21,6 +21,6 @@ class Base:
     def to_json_string(list_dictionaries):
         """returns json string rep"""
         return (
-            [] if list_dictionaries is None or list_dictionaries is []
+            [] if list_dictionaries is None or list_dictionaries == []
             else json.dumps(list_dictionaries)
         )
