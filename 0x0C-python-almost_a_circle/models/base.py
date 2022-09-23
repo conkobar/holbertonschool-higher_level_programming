@@ -23,4 +23,3 @@ class Base:
         if list_dictionaries:
             rep = json.dumps(list_dictionaries)
         return rep
-
