@@ -1,7 +1,5 @@
 #!/usr/bin/python3
 """module for rectangular model"""
-from re import X
-from turtle import width
 from models.base import Base
 
 
