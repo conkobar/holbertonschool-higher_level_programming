@@ -19,7 +19,6 @@ class Base:
 
     def to_json_string(list_dictionaries):
         """returns json string rep"""
-        rep = []
         if list_dictionaries:
-            rep = json.dumps(list_dictionaries)
-        return rep
+            return json.dumps(list_dictionaries)
+        return []
