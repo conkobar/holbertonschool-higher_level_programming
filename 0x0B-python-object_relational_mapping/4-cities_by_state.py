@@ -13,5 +13,5 @@ if __name__ == '__main__':
     )
     for city in cur.fetchall():
         print(city)
-    db.close()
     cur.close()
+    db.close()
