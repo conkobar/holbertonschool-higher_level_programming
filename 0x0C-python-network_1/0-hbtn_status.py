@@ -2,7 +2,7 @@
 """fetches an internet status"""
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     import urllib.request
     import urllib.parse
 
