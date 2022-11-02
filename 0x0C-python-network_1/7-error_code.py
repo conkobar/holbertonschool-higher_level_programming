@@ -11,5 +11,5 @@ if __name__ == '__main__':
     content = requests.get(argv[1])
     err = content.status_code
     print(
-        content.text if err < 400 else f"Error code: {err}"
+        "Error code: {}".format(err) if err >= 400 else content.text
     )
