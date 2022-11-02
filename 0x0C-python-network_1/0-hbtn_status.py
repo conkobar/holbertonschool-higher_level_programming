@@ -1,18 +1,12 @@
 #!/usr/bin/python3
 """fetches an internet status"""
+import urllib.request
 
 
 if __name__ == "__main__":
-    import urllib.request
-    import urllib.parse
-
-
     with urllib.request.urlopen('https://intranet.hbtn.io/status') as response:
         url = response.read()
-        print(
-            'Body response:',
-            f'type: {type(url)}',
-            f'content: {str(url)}',
-            'utf8 content: {}'.format(url.decode('utf-8')),
-            sep='\n\t- '
-        )
+        print("Body response:")
+        print("\t- type: {}".format(type(url)))
+        print("\t- content: {}".format(url))
+        print("\t- utf8 content: {}".format(url.decode('utf-8')))
