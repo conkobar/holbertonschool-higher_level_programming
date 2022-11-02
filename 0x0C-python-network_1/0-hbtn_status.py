@@ -13,6 +13,6 @@ if __name__ == "__main__":
             'Body response:',
             f'type: {type(url)}',
             f'content: {str(url)}',
-            f'utf8 content: {url.decode()}',
+            'utf8 content: {}'.format(url.decode('utf-8')),
             sep='\n\t- '
         )
