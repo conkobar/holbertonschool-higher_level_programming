@@ -2,7 +2,7 @@
 const out = [
   'C is fun',
   'Python is cool',
-  'Javascript is amazing'
+  'JavaScript is amazing'
 ];
 for (const idx in out) {
   console.log(out[idx]);
