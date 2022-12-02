@@ -1,16 +1,12 @@
 #!/usr/bin/node
-function almostBig (arr) {
-  let max = Math.max.apply(null, arr);
-  arr.splice(arr.indexOf(max), 1);
-  return Math.max.apply(null, arr);
-}
-
-if (process.argv[2]) {
-  let dirt = process.argv
-  const parsnip = dirt.map(function (arg) {
-    return parseInt(arg);
-  });
-  console.log(almostBig(parsnip));
+#!/usr/bin/node
+if (!process.argv[2] || process.argv.length < 4) {
+  console.log(0);
 } else {
-  console.log('0');
+  const array = process.argv.slice(2);
+  array.sort(function (a, b) {
+    return a - b;
+  });
+  array.reverse();
+  console.log(array[1]);
 }
